@@ -1,0 +1,36 @@
+# .gitignore
+
+# Kredensial Sensitif (HARUS DIECUALIKAN!)
+# File yang berisi variabel lingkungan seperti password database, kunci API, dll.
+.env
+
+# File kunci akun layanan Google Sheets Anda.
+# Ini berisi kunci pribadi dan SANGAT SENSITIF.
+# Pastikan nama file ini persis 'repogsheet.json' sesuai dengan file Anda.
+repogsheet.json
+
+# Direktori dan file yang dibuat oleh Python (biasanya tidak perlu diunggah)
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/ # Jika Anda menggunakan Jupyter notebooks
+
+# Direktori untuk lingkungan virtual Python
+# Sangat penting agar Anda tidak mengunggah seluruh lingkungan virtual.
+# Sesuaikan 'venv/' jika nama folder lingkungan virtual Anda berbeda (misalnya 'env/').
+venv/
+
+# Direktori dan file yang dibuat oleh editor/IDE (personal, tidak perlu dibagikan)
+.vscode/
+.idea/
+.DS_Store # Untuk pengguna macOS
+
+# File log atau output yang bisa dihasilkan oleh aplikasi Anda (biasanya tidak perlu diunggah)
+*.log
+*.txt
+*.csv # Jika Anda menyimpan hasil CSV sementara
+*.sqlite3 # Jika Anda menggunakan SQLite database lokal
